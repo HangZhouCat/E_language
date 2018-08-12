@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+</head>
+<body>
+
+
+    <input type="text" name="" id="编辑框_用户">
+    <input type="text" name="" id="编辑框_密码">
+    <button id="按钮_登录">登录</button>
+    <script>
+
+
+        var btn = document.getElementById("按钮_登录").onclick=function () {
+            var user = document.getElementById("编辑框_用户").value;//通过元素ID获取元素节点
+            var pass = document.getElementById("编辑框_密码").value; //获取密码
+            console.log(user + "," + pass)
+        }
+
+
+    </script>
+</body>
+</html>

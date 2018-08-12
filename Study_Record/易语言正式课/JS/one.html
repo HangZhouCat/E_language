@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <input type="text" name="num1" id="">
+    +
+    <input type="text" name="num2" id="">
+    =
+    <input type="text" name="val" id="">
+
+    <input type="button" value="Add" id="btn_Add">
+
+</body>
+<script>
+    // var abc;
+    // console.log(typeof abc);
+    // abc = 123456;
+    // console.log(typeof abc);
+    // abc = "123456";
+    // console.log(typeof abc);
+
+
+    document.getElementById("btn_Add").onclick = function () {
+        var num1 = document.querySelector("[name=num1]").value;
+        var num2 = document.querySelector("[name=num2]").value;
+        console.log(typeof num1);
+
+       document.querySelector("[name=val]").value = parseInt(num1)  + parseInt(num2) ;
+    }
+
+</script>
+</html>
